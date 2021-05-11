@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  /* font-family: "Big Shoulders Display", cursive; */
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 15px;
+  padding: 0;
+  margin: 0;
+}
+img {
+  max-width: 100%;
+}
+h2 {
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.container {
+  margin: 10px;
+}
+.cards {
+  display: flex;
+  justify-content: center;
+  margin-top: 200px;
+}
+.card {
+  padding: 2.5rem;
+  color: hsl(0, 0%, 95%);
+  width: 300px;
+  height: 350px;
+}
+.card-orange {
+  background-color: hsl(31, 77%, 52%);
+}
+.card-1 {
+  border-radius: 10px 0px 0 10px;
+}
+.card-cyan {
+  background-color: hsl(184, 100%, 22%);
+}
+.card-darkcyan {
+  background-color: hsl(179, 100%, 13%);
+}
+.card-3 {
+  border-radius: 0 10px 10px 0;
+}
+.card p {
+  min-width: 200px;
+  margin-bottom: 60px;
+}
+.card-btn {
+  text-decoration: none;
+  background-color: white;
+  padding: 10px 20px 10px 20px;
+  border-radius: 30px;
+  border: none;
+  display: inline-block;
+  cursor: pointer;
+}
+.card-btn:hover {
+  color: white;
+  border: 2px solid white;
+}
+.card-orange-btn:hover {
+  background-color: hsl(31, 77%, 52%);
+}
+.card-cyan-btn:hover {
+  background-color: hsl(184, 100%, 22%);
+}
+.card-darkcyan-btn:hover {
+  background-color: hsl(179, 100%, 13%);
+}
+.card-orange-btn {
+  color: hsl(31, 77%, 52%);
+}
+
+.card-cyan-btn {
+  color: hsl(184, 100%, 22%);
+}
+
+.card-darkcyan-btn {
+  color: hsl(179, 100%, 13%);
+}
+
+@media (max-width: 840px) {
+  .cards {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 10px 10px 10px;
+  }
+  .card p {
+    margin-bottom: 40px;
+  }
+  h2,
+  p {
+    margin-top: 20px;
+    width: auto;
+  }
+  .card {
+    width: auto;
+  }
+  .card-1 {
+    border-radius: 10px 10px 0 0;
+  }
+  .card-3 {
+    border-radius: 0 0 10px 10px;
+  }
+}
